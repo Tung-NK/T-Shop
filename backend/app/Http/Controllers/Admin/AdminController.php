@@ -32,7 +32,7 @@ class AdminController extends Controller
         return redirect()->route('admin.index');
     }
 
-    public function auth(AuthAdminRequest $request) // Error login
+    public function auth(AuthAdminRequest $request)
     {
         if ($request->validated()) {
             if (auth()->guard('admin')->attempt([
@@ -42,11 +42,10 @@ class AdminController extends Controller
                 $request->session()->regenerate();
                 return redirect()->route('admin.index');
             }
-        } else {
-            return redirect()->route('admin.login')->with([
-                'error' => 'Incorrect account or password',
-            ]);
         }
+        return redirect()->route('admin.login')->with([
+            'error' => 'Incorrect account or password',
+        ]);
     }
 
     public function logout()

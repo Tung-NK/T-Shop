@@ -7,5 +7,6 @@
 @section('content')
     <div class="row">
         @include('admin.layouts.sidebar')
+       
     </div>
 @endsection
