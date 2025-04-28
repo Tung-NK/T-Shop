@@ -12,6 +12,13 @@
                         Dashboard
                     </a>
                 </li>
+
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center gap-2 @if(request()->routeIs('admin.category.index')) text-dark @endif" aria-current="page" href="{{route('admin.category.index')}}">
+                        <i class="fa-solid fa-layer-group"></i>
+                        Categories
+                    </a>
+                </li>
             </ul>
             <hr class="my-3">
             <ul class="nav flex-column mb-auto">
@@ -21,6 +28,7 @@
                         {{ auth()->guard('admin')->user()->name }}
                     </a>
                 </li>
+
                 <li class="nav-item">
                     <a href="#"
                         onclick="document.getElementById('adminLogoutForm').submit()"

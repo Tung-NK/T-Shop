@@ -43,7 +43,7 @@
     @session('success')
         <script>
             Swal.fire({
-                position: "top-end",
+                position: "center",
                 icon: "success",
                 title: "{{ session('success') }}",
                 showConfirmButton: false,
@@ -54,7 +54,7 @@
     @session('error')
         <script>
             Swal.fire({
-                position: "top-end",
+                position: "center",
                 icon: "error",
                 title: "{{ session('error') }}",
                 showConfirmButton: false,
@@ -115,7 +115,7 @@
                     // Khi file đọc xong, gán ảnh vào thẻ <img> tương ứng và hiện ảnh ra
                     document.getElementById(image).classList.remove('d-none'); // Bỏ ẩn ảnh nếu có
                     document.getElementById(image).setAttribute('src', e.target
-                    .result); // Set src là nội dung file vừa đọc
+                        .result); // Set src là nội dung file vừa đọc
                 }
                 reader.readAsDataURL(input.files[0]); // Đọc file dưới dạng URL base64
             }
