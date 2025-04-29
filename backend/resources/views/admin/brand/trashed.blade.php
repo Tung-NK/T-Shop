@@ -1,7 +1,7 @@
 @extends('admin.layouts.app')
 
 @section('title')
-    Trashed Categories
+    Trashed Brand
 @endsection
 
 @section('content')
@@ -12,9 +12,9 @@
                 <div class="col-md-12">
                     <div class="card-header bg-white d-flex justify-content-between align-items-center">
                         <h3 class="mt-2">
-                            Trashed Categories ({{ $categories->count() }})
+                            Trashed Brand ({{ $brands->count() }})
                         </h3>
-                        <a href="{{ route('admin.category.index') }}" class="btn btn-sm btn-secondary">
+                        <a href="{{ route('admin.brand.index') }}" class="btn btn-sm btn-secondary">
                             <i class="fas fa-arrow-left"></i> Back
                         </a>
                     </div>
@@ -31,20 +31,20 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($categories as $key => $category)
+                                @foreach ($brands as $key => $brand)
                                     <tr>
                                         <td>{{ $key + 1 }}</td>
-                                        <td>{{ $category->name }}</td>
-                                        <td>{{ $category->slug }}</td>
+                                        <td>{{ $brand->name }}</td>
+                                        <td>{{ $brand->slug }}</td>
                                         <td>
-                                            <form action="{{ route('admin.category.restore', $category->slug) }}" method="post" style="display: inline-block;">
+                                            <form action="{{ route('admin.brand.restore', $brand->slug) }}" method="post" style="display: inline-block;">
                                                 @csrf
                                                 <button type="submit" class="btn btn-sm btn-success">
                                                     <i class="fas fa-undo"></i> Restore
                                                 </button>
                                             </form>
 
-                                            <form action="{{ route('admin.category.forceDelete', $category->slug) }}" method="post" style="display: inline-block;">
+                                            <form action="{{ route('admin.brand.forceDelete', $brand->slug) }}" method="post" style="display: inline-block;">
                                                 @csrf
                                                 @method('DELETE') <!-- Chỉ định phương thức DELETE -->
                                                 <button type="submit" class="btn btn-sm btn-danger">
