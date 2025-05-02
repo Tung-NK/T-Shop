@@ -40,6 +40,13 @@
                     </a>
                 </li>
 
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center gap-2 @if(request()->routeIs('admin.size*')) text-dark @endif" aria-current="page" href="{{route('admin.size.index')}}">
+                        <i class="fa-solid fa-expand"></i>
+                        Sizes
+                    </a>
+                </li>
+
             </ul>
             <hr class="my-3">
             <ul class="nav flex-column mb-auto">

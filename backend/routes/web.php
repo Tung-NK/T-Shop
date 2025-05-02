@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\BrandController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\ColorController;
+use App\Http\Controllers\Admin\SizeController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [AdminController::class, "login"])->name("admin.login");
@@ -49,5 +50,17 @@ Route::prefix("admin")->middleware("admin")->group(function () {
         Route::get('/trashed', 'trashed')->name('trashed'); 
         Route::post('/{color}/restore', 'restore')->name('restore'); 
         Route::delete('/{color}/force-delete', 'forceDelete')->name('forceDelete'); 
+    });
+
+    Route::prefix('sizes')->name('admin.size.')->controller(SizeController::class)->group(function () {
+        Route::get('/', 'index')->name('index');              
+        Route::post('/', 'store')->name('store');             
+        Route::get('/{size}/edit', 'edit')->name('edit');   
+        Route::put('/{size}', 'update')->name('update');    
+        Route::delete('/{size}', 'destroy')->name('destroy');
+
+        Route::get('/trashed', 'trashed')->name('trashed'); 
+        Route::post('/{size}/restore', 'restore')->name('restore'); 
+        Route::delete('/{size}/force-delete', 'forceDelete')->name('forceDelete'); 
     });
 });
