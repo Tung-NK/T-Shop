@@ -114,8 +114,7 @@
                 reader.onload = function(e) {
                     // Khi file đọc xong, gán ảnh vào thẻ <img> tương ứng và hiện ảnh ra
                     document.getElementById(image).classList.remove('d-none'); // Bỏ ẩn ảnh nếu có
-                    document.getElementById(image).setAttribute('src', e.target
-                        .result); // Set src là nội dung file vừa đọc
+                    document.getElementById(image).setAttribute('src', e.target.result); // Set src là nội dung file vừa đọc
                 }
                 reader.readAsDataURL(input.files[0]); // Đọc file dưới dạng URL base64
             }

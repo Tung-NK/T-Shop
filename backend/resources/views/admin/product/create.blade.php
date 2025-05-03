@@ -146,6 +146,7 @@
                                 <img src="#" alt="" id="thumbnail_preview"
                                     class="d-none img-fluid rounded mb-2" height="100" width="100">
                             </div>
+
                             <div class="mb-3">
                                 <label for="first_image" class="form-label">First Image</label>
                                 <input type="file" class="form-control @error('first_image') is-invalid @enderror"
@@ -160,6 +161,7 @@
                                 <img src="#" alt="" id="first_image_preview"
                                     class="d-none img-fluid rounded mb-2" height="100" width="100">
                             </div>
+
                             <div class="mb-3">
                                 <label for="second_image" class="form-label">Second Image</label>
                                 <input type="file" class="form-control @error('second_image') is-invalid @enderror"
@@ -174,6 +176,7 @@
                                 <img src="#" alt="" id="second_image_preview"
                                     class="d-none img-fluid rounded mb-2" height="100" width="100">
                             </div>
+
                             <div class="mb-3">
                                 <label for="third_image" class="form-label">Third Image</label>
                                 <input type="file" class="form-control @error('third_image') is-invalid @enderror"
@@ -188,6 +191,7 @@
                                 <img src="#" alt="" id="third_image_preview"
                                     class="d-none img-fluid rounded mb-2" height="100" width="100">
                             </div>
+                            
                             <button type="submit" class="btn btn-sm btn-dark mb-3">
                                 Submit
                             </button>

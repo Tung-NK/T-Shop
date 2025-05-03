@@ -30,39 +30,39 @@ Route::prefix("admin")->middleware("admin")->group(function () {
     });
 
     Route::prefix('brands')->name('admin.brand.')->controller(BrandController::class)->group(function () {
-        Route::get('/', 'index')->name('index');              
-        Route::post('/', 'store')->name('store');             
-        Route::get('/{brand}/edit', 'edit')->name('edit');   
-        Route::put('/{brand}', 'update')->name('update');    
+        Route::get('/', 'index')->name('index');
+        Route::post('/', 'store')->name('store');
+        Route::get('/{brand}/edit', 'edit')->name('edit');
+        Route::put('/{brand}', 'update')->name('update');
         Route::delete('/{brand}', 'destroy')->name('destroy');
 
-        Route::get('/trashed', 'trashed')->name('trashed'); 
-        Route::post('/{brand:slug}/restore', 'restore')->name('restore'); 
-        Route::delete('/{brand:slug}/force-delete', 'forceDelete')->name('forceDelete'); 
+        Route::get('/trashed', 'trashed')->name('trashed');
+        Route::post('/{brand:slug}/restore', 'restore')->name('restore');
+        Route::delete('/{brand:slug}/force-delete', 'forceDelete')->name('forceDelete');
     });
 
     Route::prefix('colors')->name('admin.color.')->controller(ColorController::class)->group(function () {
-        Route::get('/', 'index')->name('index');              
-        Route::post('/', 'store')->name('store');             
-        Route::get('/{color}/edit', 'edit')->name('edit');   
-        Route::put('/{color}', 'update')->name('update');    
+        Route::get('/', 'index')->name('index');
+        Route::post('/', 'store')->name('store');
+        Route::get('/{color}/edit', 'edit')->name('edit');
+        Route::put('/{color}', 'update')->name('update');
         Route::delete('/{color}', 'destroy')->name('destroy');
 
-        Route::get('/trashed', 'trashed')->name('trashed'); 
-        Route::post('/{color}/restore', 'restore')->name('restore'); 
-        Route::delete('/{color}/force-delete', 'forceDelete')->name('forceDelete'); 
+        Route::get('/trashed', 'trashed')->name('trashed');
+        Route::post('/{color}/restore', 'restore')->name('restore');
+        Route::delete('/{color}/force-delete', 'forceDelete')->name('forceDelete');
     });
 
     Route::prefix('sizes')->name('admin.size.')->controller(SizeController::class)->group(function () {
-        Route::get('/', 'index')->name('index');              
-        Route::post('/', 'store')->name('store');             
-        Route::get('/{size}/edit', 'edit')->name('edit');   
-        Route::put('/{size}', 'update')->name('update');    
+        Route::get('/', 'index')->name('index');
+        Route::post('/', 'store')->name('store');
+        Route::get('/{size}/edit', 'edit')->name('edit');
+        Route::put('/{size}', 'update')->name('update');
         Route::delete('/{size}', 'destroy')->name('destroy');
 
-        Route::get('/trashed', 'trashed')->name('trashed'); 
-        Route::post('/{size}/restore', 'restore')->name('restore'); 
-        Route::delete('/{size}/force-delete', 'forceDelete')->name('forceDelete'); 
+        Route::get('/trashed', 'trashed')->name('trashed');
+        Route::post('/{size}/restore', 'restore')->name('restore');
+        Route::delete('/{size}/force-delete', 'forceDelete')->name('forceDelete');
     });
 
     Route::prefix('products')->name('admin.product.')->controller(ProductController::class)->group(function () {
