@@ -24,7 +24,7 @@
                                 <i class="fas fa-plus"></i>
                             </a> --}}
 
-                            <a href="{{route('admin.product.create')}}" class="btn btn-sm btn-primary ms-2">
+                            <a href="{{ route('admin.product.create') }}" class="btn btn-sm btn-primary ms-2">
                                 <i class="fas fa-plus"></i>
                             </a>
                         </div>

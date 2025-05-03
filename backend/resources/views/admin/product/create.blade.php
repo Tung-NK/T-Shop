@@ -30,6 +30,8 @@
                                     </span>
                                 @enderror
                             </div>
+
+
                             <div class="mb-3">
                                 <label for="qty" class="form-label">Quantity*</label>
                                 <input type="number" class="form-control @error('qty') is-invalid @enderror" name="qty"
@@ -41,6 +43,8 @@
                                     </span>
                                 @enderror
                             </div>
+
+
                             <div class="mb-3">
                                 <label for="price" class="form-label">Price*</label>
                                 <input type="number" class="form-control @error('price') is-invalid @enderror"
@@ -52,6 +56,8 @@
                                     </span>
                                 @enderror
                             </div>
+
+
                             <div class="mb-3">
                                 <label for="category_id" class="form-label">Category*</label>
                                 <select class="form-control @error('category_id') is-invalid @enderror" name="category_id"
@@ -70,6 +76,8 @@
                                     </span>
                                 @enderror
                             </div>
+
+
                             <div class="mb-3">
                                 <label for="brand_id" class="form-label">Brand*</label>
                                 <select class="form-control @error('brand_id') is-invalid @enderror" name="brand_id"
@@ -88,6 +96,8 @@
                                     </span>
                                 @enderror
                             </div>
+
+
                             <div class="mb-3">
                                 <label for="color_id" class="form-label">Colors*</label>
                                 <select class="form-control @error('color_id') is-invalid @enderror" name="color_id[]"
@@ -105,6 +115,8 @@
                                     </span>
                                 @enderror
                             </div>
+
+
                             <div class="mb-3">
                                 <label for="size_id" class="form-label">Sizes*</label>
                                 <select class="form-control @error('size_id') is-invalid @enderror" name="size_id[]"
@@ -122,6 +134,8 @@
                                     </span>
                                 @enderror
                             </div>
+
+
                             <div class="mb-3">
                                 <label for="desc" class="form-label">Description*</label>
                                 <textarea class="form-control summernote @error('desc') is-invalid @enderror" name="desc" id="desc"
@@ -132,6 +146,8 @@
                                     </span>
                                 @enderror
                             </div>
+
+
                             <div class="mb-3">
                                 <label for="thumbnail" class="form-label">Thumbnail*</label>
                                 <input type="file" class="form-control @error('thumbnail') is-invalid @enderror"
@@ -146,6 +162,7 @@
                                 <img src="#" alt="" id="thumbnail_preview"
                                     class="d-none img-fluid rounded mb-2" height="100" width="100">
                             </div>
+
 
                             <div class="mb-3">
                                 <label for="first_image" class="form-label">First Image</label>
@@ -162,6 +179,7 @@
                                     class="d-none img-fluid rounded mb-2" height="100" width="100">
                             </div>
 
+
                             <div class="mb-3">
                                 <label for="second_image" class="form-label">Second Image</label>
                                 <input type="file" class="form-control @error('second_image') is-invalid @enderror"
@@ -177,6 +195,7 @@
                                     class="d-none img-fluid rounded mb-2" height="100" width="100">
                             </div>
 
+                            
                             <div class="mb-3">
                                 <label for="third_image" class="form-label">Third Image</label>
                                 <input type="file" class="form-control @error('third_image') is-invalid @enderror"
@@ -191,7 +210,7 @@
                                 <img src="#" alt="" id="third_image_preview"
                                     class="d-none img-fluid rounded mb-2" height="100" width="100">
                             </div>
-                            
+
                             <button type="submit" class="btn btn-sm btn-dark mb-3">
                                 Submit
                             </button>
