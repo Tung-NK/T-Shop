@@ -47,6 +47,13 @@
                     </a>
                 </li>
 
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center gap-2 @if(request()->routeIs('admin.product*')) text-dark @endif" aria-current="page" href="{{route('admin.product.index')}}">
+                        <i class="fa-solid fa-tag"></i>
+                        Products
+                    </a>
+                </li>
+
             </ul>
             <hr class="my-3">
             <ul class="nav flex-column mb-auto">

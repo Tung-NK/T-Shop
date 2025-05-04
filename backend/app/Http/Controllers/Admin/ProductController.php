@@ -91,7 +91,7 @@ class ProductController extends Controller
         $brands = Brand::all();
         $colors = Color::all();
         $sizes = Size::all();
-        return view('admin.product.create')->with([
+        return view('admin.product.edit')->with([
             'categories' => $categories,
             'brands' => $brands,
             'colors' => $colors,
@@ -165,7 +165,7 @@ class ProductController extends Controller
     public function removeProductImageFromStorage($file)
     {
         $path = public_path($file);
-        if(File::exists($path)) {
+        if (File::exists($path)) {
             File::delete($path);
         }
     }
