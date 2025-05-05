@@ -152,8 +152,39 @@ class ProductController extends Controller
      */
     public function destroy(Product $product)
     {
-        //
+        $product->delete();
+        return redirect()->route('admin.product.index')->with([
+            'success' => 'Product deleted successfully'
+        ]);
     }
+
+    public function trashed()
+    {
+        $products = Product::onlyTrashed()->get(); // Lấy danh sách đã xóa mềm
+        return view('admin.product.trashed', compact('products'));
+    }
+
+
+    public function restore($slug)
+    {
+        $product = Product::withTrashed()->where('slug', $slug)->firstOrFail(); // Tìm bản ghi đã xóa mềm
+        $product->restore(); // Khôi phục
+        return redirect()->route('admin.product.index')->with('success', 'Product restored successfully');
+    }
+
+    public function forceDelete($slug)
+    {
+        $product = Product::withTrashed()->where('slug', $slug)->firstOrFail();
+        $product->forceDelete();
+
+        $this->removeProductImageFromStorage($product->thumbnail);
+        $this->removeProductImageFromStorage($product->first_image);
+        $this->removeProductImageFromStorage($product->second_image);
+        $this->removeProductImageFromStorage($product->third_image);
+
+        return redirect()->route('admin.product.trashed')->with('success', 'Product permanently deleted');
+    }
+
 
     public function saveImage($file)
     {
