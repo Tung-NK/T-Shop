@@ -1,16 +1,25 @@
 # T-Shop E-Commerce
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/laravel/art/master/logo.svg" alt="Laravel Logo" width="100"/>
-  <span style="font-size: 48px; margin: 0 20px;">+</span>
-  <img src="https://vuejs.org/images/logo.png" alt="Vue.js Logo" width="100"/>
+  <span style="display: inline-flex; align-items: center; justify-content: center; gap: 40px;">
+    <a href="https://laravel.com" target="_blank" rel="noopener noreferrer">
+    <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" alt="Laravel Logo" height="120" style="vertical-align: middle;"/>
+    </a>
+    <span style="font-size: 48px; line-height: 1; display: flex; align-items: center;">+</span>
+    <a href="https://vuejs.org" target="_blank" rel="noopener noreferrer">
+    <img src="https://vuejs.org/images/logo.png" alt="Vue.js Logo" height="100" style="vertical-align: middle;"/>
+    </a>
+  </span>
 </p>
+
 
 ## Giới thiệu về T-Shop
 
-Chào mừng bạn đến với **T-Shop**, nền tảng thương mại điện tử hiện đại và tinh tế, nơi mang đến trải nghiệm mua sắm quần áo trực tuyến đỉnh cao! T-Shop được thiết kế với giao diện thân thiện, tốc độ tải nhanh và tính năng vượt trội, giúp bạn dễ dàng khám phá và sở hữu những bộ sưu tập thời trang mới nhất. Dự án này được xây dựng từ tâm huyết của lập trình viên **Nguyễn Khắc Tùng**, kết hợp sức mạnh của **Laravel 10** ở phía backend và **Vue.js 3** ở phía frontend, tạo nên một hệ thống mạnh mẽ, bảo mật và dễ dàng mở rộng.
+Chào mừng bạn đến với **T-Shop**, một dự án thương mại điện tử đơn giản được xây dựng nhằm nâng cao kỹ năng lập trình của tôi. 
 
-T-Shop không chỉ là một cửa hàng trực tuyến, mà còn là nơi truyền cảm hứng thời trang, giúp bạn tự tin thể hiện phong cách riêng. Hãy cùng khám phá ngay hôm nay!
+T-Shop là nền tảng mua sắm quần áo trực tuyến, được phát triển bởi tôi - **TungNK** với mục tiêu học hỏi và thực hành công nghệ hiện đại. Kết hợp sức mạnh của **Laravel 10** ở phía backend và **Vue.js 3** ở phía frontend, tạo nên một hệ thống mạnh mẽ, bảo mật và dễ dàng mở rộng.
+
+Giao diện thân thiện, tốc độ mượt mà và chức năng cơ bản giúp tôi rèn luyện khả năng xây dựng các ứng dụng web thực tế. Rất mong nhận được góp ý từ bạn để dự án ngày càng hoàn thiện hơn!
 
 ## Hướng dẫn chạy dự án
 
@@ -96,7 +105,7 @@ T-Shop không chỉ là một cửa hàng trực tuyến, mà còn là nơi truy
 
 ## Lời kết
 
-Dự án T-Shop là tâm huyết của tôi, được xây dựng với mong muốn mang lại một trải nghiệm mua sắm trực tuyến tuyệt vời. Nếu bạn có bất kỳ câu hỏi hoặc góp ý, đừng ngần ngại liên hệ!
+Dự án T-Shop là tâm huyết của tôi, được xây dựng với mong muốn học hỏi thêm phát triển thêm kĩ năng lập trình. Nếu bạn có bất kỳ câu hỏi hoặc góp ý, đừng ngần ngại liên hệ!
 
-**Ký tên,**  
-**Nguyễn Khắc Tùng**
+**Thân ái**  
+**TungNK 😘**
