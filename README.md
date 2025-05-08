@@ -1,17 +1,20 @@
 # T-Shop E-Commerce
 
-<p align="center">
-  <span style="display: inline-flex; align-items: center; justify-content: center; gap: 40px;">
-    <a href="https://laravel.com" target="_blank" rel="noopener noreferrer">
-    <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" alt="Laravel Logo" height="120" style="vertical-align: middle;"/>
-    </a>
-    <span style="font-size: 48px; line-height: 1; display: flex; align-items: center;">+</span>
-    <a href="https://vuejs.org" target="_blank" rel="noopener noreferrer">
-    <img src="https://vuejs.org/images/logo.png" alt="Vue.js Logo" height="100" style="vertical-align: middle;"/>
-    </a>
-  </span>
-</p>
-
+<table align="center" border="0" cellpadding="0" cellspacing="0" style="border: none; border-collapse: collapse;">
+  <tr>
+    <td align="center" style="border: none;">
+      <a href="https://laravel.com" target="_blank" rel="noopener noreferrer">
+        <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" alt="Laravel Logo" height="100" />
+      </a>
+    </td>
+    <td align="center" style="font-size: 40px; border: none;">+</td>
+    <td align="center" style="border: none;">
+      <a href="https://vuejs.org" target="_blank" rel="noopener noreferrer">
+        <img src="https://vuejs.org/images/logo.png" alt="Vue.js Logo" height="100" />
+      </a>
+    </td>
+  </tr>
+</table>
 
 ## Giới thiệu về T-Shop
 
