@@ -24,13 +24,13 @@
                             </router-link>
                         </li>
                         <li class="nav-item mx-2">
-                            <router-link class="nav-link" to="/shop">Shop</router-link>
+                            <router-link class="nav-link" to="#">Shop</router-link>
                         </li>
                         <li class="nav-item mx-2">
-                            <router-link class="nav-link" to="/about">About</router-link>
+                            <router-link class="nav-link" to="#">About</router-link>
                         </li>
                         <li class="nav-item mx-2">
-                            <router-link class="nav-link" to="/contact">Contact</router-link>
+                            <router-link class="nav-link" to="#">Contact</router-link>
                         </li>
                     </ul>
 
@@ -48,7 +48,7 @@
                     <router-link to="/" class="icon-link me-3">
                         <i class="bi bi-heart"></i>
                     </router-link>
-                    <router-link to="/cart" class="icon-link me-3 position-relative">
+                    <router-link to="#" class="icon-link me-3 position-relative">
                         <i class="bi bi-cart"></i>
                         <span class="cart-badge">3</span>
                     </router-link>
