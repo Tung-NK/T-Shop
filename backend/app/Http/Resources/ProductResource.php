@@ -8,11 +8,12 @@ use Illuminate\Http\Resources\Json\JsonResource;
 class ProductResource extends JsonResource
 {
     /**
-     * Transform the resource into an array.
+     * Đảm bảo dữ liệu của sản phẩm được trả về theo một cấu trúc nhất quán, dễ hiểu, và phù hợp với yêu cầu của API.
+     * Cho phép chọn lọc các trường cần trả về, loại bỏ các dữ liệu không cần thiết hoặc nhạy cảm.
      *
      * @return array<string, mixed>
      */
-    public function toArray(Request $request): array
+    public function toArray(Request $request): array //Hàm này chuyển đổi dữ liệu của model Product thành một mảng, sau đó Laravel tự động chuyển mảng này thành JSON.
     {
         return [
             'id' => $this->id,
@@ -27,7 +28,7 @@ class ProductResource extends JsonResource
             'sizes' => $this->sizes,
             'reviews' => $this->reviews,
             'status' => $this->status,
-            'thumbnail' => asset($this->thumbnail),
+            'thumbnail' => url($this->thumbnail),
             'first_image' => $this->first_image ? asset($this->first_image) : null,
             'second_image' => $this->second_image ? asset($this->second_image) : null,
             'third_image' => $this->third_image ? asset($this->third_image) : null,

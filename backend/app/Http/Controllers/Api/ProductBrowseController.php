@@ -21,7 +21,7 @@ class ProductBrowseController extends Controller
      */
     public function index()
     {
-        return ProductResource::collection(
+        return ProductResource::collection( //collection() chuyển đổi danh sách sản phẩm thành định dạng JSON.
             Product::with(['colors', 'sizes', 'category', 'brand'])->latest()->get()
         )->additional($this->getFilterData());
     }
@@ -105,12 +105,13 @@ class ProductBrowseController extends Controller
 
 
     /**
-     * Trả về dữ liệu lọc chung: màu, kích cỡ, thương hiệu, danh mục có sản phẩm.
+     * Trả về dữ liệu bộ lọc chung (màu sắc, kích cỡ, thương hiệu, danh mục) chỉ trả về các mục có sản phẩm liên kết.
+     * 
      */
     private function getFilterData()
     {
         return [
-            'colors' => Color::has('products')->get(),
+            'colors' => Color::has('products')->get(), //has('products'): là một query scope để chỉ lấy các bản ghi có mối quan hệ với sản phẩm.
             'sizes' => Size::has('products')->get(),
             'brands' => Brand::has('products')->get(),
             'categories' => Category::has('products')->get(),
