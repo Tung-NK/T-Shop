@@ -1,6 +1,6 @@
 <template>
-    <div class="col-md-6">
-        <div class="card product-card shadow-sm mb-2" style="max-width: 320px; margin: 0 auto">
+    <div class="col-12 col-sm-6 col-md-4 mb-4">
+       <div class="card product-card shadow-sm h-100" style="max-width: 320px; margin: 0 auto">
             <img :src="product.thumbnail" class="card-img-top" :alt="product.name" height="260">
             <div class="card-body">
                 <h5 class="card-title">{{ product.name }}</h5>
@@ -53,10 +53,29 @@ const formatPrice = (price) => {
 
 <style scoped>
 .product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
     transition: transform 0.3s ease-in-out;
 }
 
 .product-card:hover {
     transform: translateY(-5px);
+}
+
+.card-body {
+    flex-grow: 1;
+    /* Đảm bảo phần nội dung chính chiếm không gian còn lại */
+}
+
+.card-footer {
+    margin-top: auto;
+    /* Đẩy footer xuống cuối card */
+}
+
+.card-img-top {
+    height: 260px; /* Đặt chiều cao cố định */
+    object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
 }
 </style>
