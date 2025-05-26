@@ -1,5 +1,17 @@
 <template>
     <div class="row">
+        <div class="d-flex">
+           <div class="mb-3" v-if="productsStore.products.length">
+            Found 
+            <span class="fw-bold">{{ productsStore.products.length }}</span>
+            {{ productsStore.products.length > 1 ? 'products' : 'product' }}
+           </div>
+           <div class="ms-1" v-if="productsStore.filter">
+               for <span class="fw-bold">
+                   {{ productsStore.filter.param }}  {{ productsStore.filter.value }}
+               </span>
+           </div>
+        </div>
         <ProductListItem v-for="product in productsStore.products.slice(0, data.productToShow)" :key="product.id"
             :product="product">
 
