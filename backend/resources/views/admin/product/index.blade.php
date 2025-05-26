@@ -121,44 +121,4 @@
             </div>
         </div>
     </div>
-
-    {{-- <div class="modal fade @if ($errors->any()) show @endif" id="addCategoryModal" tabindex="-1"
-        aria-labelledby="addCategoryModalLabel" aria-hidden="true"
-        @if ($errors->any()) style="display: block;" @endif>
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="addCategoryModalLabel">Add New Category</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form action="{{ route('admin.category.store') }}" method="post" id="addCategoryForm">
-                        @csrf
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Name*</label>
-                            <input type="text" class="form-control @error('name') is-invalid @enderror" name="name"
-                                id="name" value="{{ old('name') }}" placeholder="Enter category name">
-                            @error('name')
-                                <span class="invalid-feedback">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                            @enderror
-                        </div>
-                        <button type="submit" class="btn btn-sm btn-dark">
-                            Submit
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const addCategoryModal = new bootstrap.Modal(document.getElementById('addCategoryModal'));
-            @if ($errors->any())
-                addCategoryModal.show();
-            @endif
-        });
-    </script> --}}
 @endsection
