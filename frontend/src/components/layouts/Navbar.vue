@@ -4,7 +4,7 @@ import SearchForm from '../partials/SearchForm.vue';
 </script>
 
 <template>
-    <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+    <nav class="navbar navbar-expand-lg navbar-light custom-navbar sticky-top">
         <div class="container-fluid">
             <!-- Logo -->
             <router-link class="navbar-brand" to="/">
