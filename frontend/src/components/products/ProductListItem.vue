@@ -3,7 +3,9 @@
        <div class="card product-card shadow-sm h-100" style="max-width: 320px; margin: 0 auto">
             <img :src="product.thumbnail" class="card-img-top" :alt="product.name" height="260">
             <div class="card-body">
-                <h5 class="card-title">{{ product.name }}</h5>
+                <router-link class="text-decoration-none text-dark" :to="`/product/${product.slug}`">
+                    <h5 class="card-title">{{ product.name }}</h5>
+                </router-link>
                 <p class="card-text" v-dompurify-html="product.desc.substr(0, 50)"></p>
                 <div class="d-flex justify-content-between align-items-center mb-3">
                     <span class="h5 mb-0">{{ formatPrice(product.price) }} VND</span>

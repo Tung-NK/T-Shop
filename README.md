@@ -92,7 +92,7 @@ Giao diện thân thiện, tốc độ mượt mà và chức năng cơ bản gi
 
 3. **Cấu hình API**:
    - Đảm bảo backend đang chạy.
-   - Cập nhật URL của backend trong file cấu hình Vue (thường là `src/config.js` hoặc `.env`):
+   - Cập nhật URL của backend trong file cấu hình Vue (`config.js` hoặc `.env`):
      ```env
      VUE_APP_API_URL=http://localhost:8000/api
      ```
