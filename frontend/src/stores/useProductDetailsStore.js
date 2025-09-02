@@ -48,25 +48,7 @@ export const useProductDetailsStore = defineStore('product', {
                     });
                 }
 
-                // if (response.data.data.first_image) {
-                //     this.productImages.push({
-                //         id: 1,
-                //         src: response.data.data.first_image //Nếu có ảnh đầu tiên, thêm vào mảng productImages.
-                //     }) //Nếu có ảnh đầu tiên, thêm vào mảng productImages.
-
-                // }
-                // if (response.data.data.second_image) {
-                //     this.productImages.push({
-                //         id: 2,
-                //         src: response.data.data.second_image
-                //     })
-                // }
-                // if (response.data.data.third_image) {
-                //     this.productImages.push({
-                //         id: 3,
-                //         src: response.data.data.third_image
-                //     })
-                // }
+              
                 this.isLoading = false //Đặt isLoading = false khi hoàn tất.
             } catch (error) {
                 this.isLoading = false
